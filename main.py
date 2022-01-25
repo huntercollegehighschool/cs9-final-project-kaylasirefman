@@ -11,9 +11,8 @@ Name of Project: Hangman
 #import page4  # uncomment if you're using page4
 #importing the time module 
 import time 
-#welcoming the user 
 def raw_input():
-   input("what is your guess")
+   input("what is your guess:")
 
 name = raw_input
 print("Hello, Time to play hangman!") 
@@ -39,7 +38,7 @@ while turns > 0:
       print (raw_input) 
       guess = raw_input("guess a character:") 
       guesses += guess 
-    if guess not in word: 
+    if guess () not in word: 
         turns -= 1 
         print ("Wrong ") 
         print ("You have", + turns, 'more guesses')  
